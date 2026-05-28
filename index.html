@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Grand Aluminium - Premium Aluminium & Interior Solutions. Expertise in fabrication, glass partitions, kitchen cabinets, and more.">
+    <title>Grand Aluminium | Premium Aluminium & Interior Solutions</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="GA-logo.png" alt="Grand Aluminium Logo" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center text-white" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-4">Premium Aluminium & <br><span class="text-primary">Interior
+                    Solutions</span></h1>
+            <p class="lead mb-5 mx-auto" style="max-width: 700px;">Transforming spaces with precision, quality, and
+                modern aesthetics. Your trusted partner for premium aluminium and glass interior works.</p>
+            <div class="btn-container d-flex justify-content-center gap-3">
+                <a href="#contact" class="btn btn-primary btn-lg px-4"><i
+                        class="fa-solid fa-comment-dots me-2"></i>Enquire</a>
+                <a href="services.html" class="btn btn-outline-light btn-lg px-4"><i
+                        class="fa-solid fa-briefcase me-2"></i>Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-2">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h6 class="text-primary fw-bold text-uppercase mb-2">About Us</h6>
+                    <h2 class="display-5 fw-bold mb-4">Crafting Excellence in Every Detail</h2>
+                    <p class="text-muted mb-4">With years of experience in the industry, Grand Aluminium specializes in
+                        providing high-quality aluminium fabrication and interior solutions for residential and
+                        commercial projects. Our focus is on durability, modern finishing, and customer satisfaction.
+                    </p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <h3 class="fw-bold text-primary mb-0 me-2">10+</h3>
+                                <p class="mb-0 text-dark fw-semibold">Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <h3 class="fw-bold text-primary mb-0 me-2">500+</h3>
+                                <p class="mb-0 text-dark fw-semibold">Projects Done</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-dark px-4">Learn More</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-img-wrapper position-relative ps-4 pb-4">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Aluminium Work" class="img-fluid rounded shadow">
+                        <div
+                            class="experience-badge bg-primary text-white p-4 rounded shadow position-absolute bottom-0 start-0">
+                            <h4 class="mb-0 fw-bold">Quality First</h4>
+                            <p class="mb-0 small">Modern Finishing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-2" style="background-color: rgba(0,0,0,0.02);">
+        <div class="container py-5">
+            <div class="text-center mb-2" data-aos="fade-up">
+                <h6 class="text-primary fw-bold text-uppercase mb-2">What We Do</h6>
+                <h2 class="display-5 fw-bold mb-4">Our Specialized Services</h2>
+                <a href="services.html" class="btn btn-primary btn-lg px-5"><i
+                        class="fa-solid fa-arrow-right me-2"></i>Show All Services</a>
+            </div>
+
+            <!-- Swiper Slider for Services -->
+            <div class="swiper servicesSwiper pb-5" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Service 1 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-industry fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Aluminium Fabrication</h4>
+                            <p class="text-muted">High-precision fabrication for various industrial and residential
+                                needs using premium grade aluminium.</p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-chalkboard fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Glass Partition Works</h4>
+                            <p class="text-muted">Elegant and durable glass partitions for modern offices and homes to
+                                create open yet private spaces.</p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-layer-group fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">ACP Cladding</h4>
+                            <p class="text-muted">Premium Aluminium Composite Panel cladding for modern building
+                                exteriors and aesthetics.</p>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-kitchen-set fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Kitchen Cabinets</h4>
+                            <p class="text-muted">Sleek and moisture-resistant aluminium kitchen cabinets designed for
+                                modern functionality.</p>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-briefcase fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Office Interiors</h4>
+                            <p class="text-muted">Complete office interior solutions including desks, partitions, and
+                                ceiling works.</p>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-door-open fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Sliding Windows & Doors</h4>
+                            <p class="text-muted">Smooth-operating and secure aluminium sliding systems for modern
+                                living spaces.</p>
+                        </div>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="swiper-slide">
+                        <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4"
+                            style="background-color: #f8f9fa;">
+                            <div class="icon-box mb-4 text-primary">
+                                <i class="fa-solid fa-cloud fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">False Ceiling Works</h4>
+                            <p class="text-muted">Innovative false ceiling designs to enhance the lighting and acoustics
+                                of your space.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-2">
+        <div class="container py-5">
+            <div class="text-center mb-2" data-aos="fade-up">
+                <h6 class="text-primary fw-bold text-uppercase mb-2">Our Portfolio</h6>
+                <h2 class="display-5 fw-bold">Our Projects</h2>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper projectsSwiper pb-5" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Office Interior" class="img-fluid w-100">
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white">
+                                    <h5 class="mb-0">Office Partition</h5>
+                                    <small>Commercial</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Modern Kitchen" class="img-fluid w-100">
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white">
+                                    <h5 class="mb-0">Aluminium Kitchen</h5>
+                                    <small>Residential</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Glass Door" class="img-fluid w-100">
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white">
+                                    <h5 class="mb-0">Sliding Doors</h5>
+                                    <small>Residential</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="ACP Cladding" class="img-fluid w-100">
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white">
+                                    <h5 class="mb-0">Building Cladding</h5>
+                                    <small>Commercial</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="False Ceiling" class="img-fluid w-100">
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white">
+                                    <h5 class="mb-0">Modern Ceiling</h5>
+                                    <small>Interior</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Office Furniture" class="img-fluid w-100">
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white">
+                                    <h5 class="mb-0">Custom Workstations</h5>
+                                    <small>Commercial</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="bg-dark py-2 text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary fw-bold text-uppercase mb-3">Our Commitment</h6>
+                    <h2 class="display-5 fw-bold mb-4">Quality Guaranteed</h2>
+                    <div class="guarantee-box p-4 rounded-4 border border-secondary bg-secondary-subtle bg-opacity-10">
+                        <i class="fa-solid fa-quote-left text-black fs-2 mb-3"></i>
+                        <p class="fs-5 fst-italic mb-3 text-black">"We are committed to delivering the highest quality
+                            aluminium and interior solutions. Every project we undertake is backed by our promise of
+                            precision, durability, and modern finishing. Your satisfaction is our primary goal."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-2" style="background-color: #f8f9fa;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h6 class="text-primary fw-bold text-uppercase mb-2">Contact Us</h6>
+                    <h2 class="display-5 fw-bold mb-4">Let's Discuss Your Project</h2>
+                    <p class="text-muted mb-5">Have a project in mind? Reach out to us for a free consultation and
+                        quote. We are ready to help you with your aluminium and interior needs.</p>
+
+                    <div class="contact-info d-flex align-items-start mb-4">
+                        <div class="icon-circle bg-light text-primary me-3">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Our Office</h5>
+                            <p class="text-muted mb-0">Ollur, Thrissur</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info d-flex align-items-start mb-4">
+                        <div class="icon-circle bg-light text-primary me-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Call Us</h5>
+                            <p class="text-muted mb-0">+91 80864 38757<br>+91 95679 75288</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="tel:+919567975288" class="btn btn-primary btn-lg px-5 mb-3 w-100">
+                            <i class="fa-solid fa-phone me-2"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/919567975288" target="_blank" class="btn btn-success btn-lg px-5 w-100">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="map-container rounded-4 overflow-hidden shadow-sm h-100" style="min-height: 400px;">
+                        <!-- Placeholder for Map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62758.10006764536!2d76.19139885501865!3d10.511666993181165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ee0629a8f4c1%3A0x8673322194682025!2sThrissur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1683456789012!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container text-center">
+            <div class="mb-2">
+                <img src="GA-logo.png" alt="Grand Aluminium Logo">
+                <div class="d-flex justify-content-center gap-3 mb-2">
+                    <a href="tel:+919567975288" class="text-white"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/919567975288" target="_blank" class="text-white"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p class="text-secondary">Ollur, Thrissur</p>
+            </div>
+            <p class="text-secondary">&copy; 2026 Grand Aluminium. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919567975288" class="floating-whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
