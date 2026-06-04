@@ -72,33 +72,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Close mobile navbar when link is clicked
+    // Smooth scroll for anchor links with navbar auto-close
     const navbarCollapse = document.querySelector('.navbar-collapse');
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarToggler = document.querySelector('.navbar-toggler');
     
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            // Close the navbar collapse
-            if (navbarCollapse.classList.contains('show')) {
-                const collapseInstance = new bootstrap.Collapse(navbarCollapse, {
-                    toggle: false
-                });
-                collapseInstance.hide();
-            }
-        });
-    });
-
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
+            const target = document.querySelector(href);
+            
             if (target) {
-                const navbarHeight = navbar.offsetHeight;
-                window.scrollTo({
-                    top: target.offsetTop - navbarHeight,
-                    behavior: 'smooth'
-                });
+                e.preventDefault();
+                
+                // Close navbar if it's open
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                    // Wait for navbar to close, then scroll
+                    setTimeout(() => {
+                        const navbarHeight = navbar.offsetHeight;
+                        window.scrollTo({
+                            top: target.offsetTop - navbarHeight,
+                            behavior: 'smooth'
+                        });
+                    }, 150);
+                } else {
+                    // Navbar is already closed, scroll immediately
+                    const navbarHeight = navbar.offsetHeight;
+                    window.scrollTo({
+                        top: target.offsetTop - navbarHeight,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });
