@@ -72,6 +72,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Close mobile navbar when link is clicked
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Close the navbar collapse
+            if (navbarCollapse.classList.contains('show')) {
+                const collapseInstance = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                collapseInstance.hide();
+            }
+        });
+    });
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

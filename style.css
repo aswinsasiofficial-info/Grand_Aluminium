@@ -338,15 +338,51 @@ footer a:hover {
         padding: 20px;
         border-radius: 12px;
         width: 100%;
+        animation: slideDown 0.3s ease-out;
+    }
+    .navbar-collapse.collapsing {
+        animation: slideUp 0.3s ease-in;
     }
     .nav-link {
         margin: 10px 0;
         text-align: center;
+        padding: 8px 0 !important;
+        transition: all 0.2s ease;
+    }
+    .nav-link:hover {
+        color: var(--primary-color) !important;
     }
     .navbar-toggler {
         border: none;
         outline: none;
         box-shadow: none;
+        padding: 0.25rem 0.5rem;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
     }
 }
 
